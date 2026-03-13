@@ -224,13 +224,6 @@ cp -r ~/.teach ~/backup/teach-backup-$(date +%Y%m%d)
 cp -r ~/backup/teach-backup-* ~/.teach
 ```
 
-### Q: 如何查看所有数据？
-
-```bash
-# 使用 sqlite3 查看
-sqlite3 ~/.teach/memory.db "SELECT * FROM memories;"
-```
-
 ### Q: 误删了怎么办？
 
 如果有备份，从备份恢复。建议定期备份 `~/.teach/` 目录。
